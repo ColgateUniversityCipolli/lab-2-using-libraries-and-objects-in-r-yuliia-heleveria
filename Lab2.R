@@ -1,3 +1,5 @@
+#Task 1
+
 #Part 1
 all.subdirectories <- list.dirs("MUSIC") #list all sub directories
 #print(all.subdirectories)
@@ -64,3 +66,23 @@ for (i in 1:length(all.album.subdirectories)){ #for each album sub directory
 #Part 4
 #write the code.to.process vector to batfile.txt
 writeLines(code.to.process, con = 'batfile.txt', sep = '\n')
+
+#Task 2
+#find track in the folder
+find.song <- list.files()
+song.output <- find.song[8] #provided song
+#extract artist
+split.song.output <- str_split(song.output, '-', simplify = T)
+artist.pt2 <- split.song.output[1]
+#extract album
+album.pt2 <- split.song.output[2]
+#extract track
+track.pt2.json <- split.song.output[3]
+track.pt2 <- str_sub(track.pt2.json, start = 1, end = -6) #remove .json
+
+#Step 1
+
+#Step 2
+# load JSON file into R
+fromJSON(song)
+
