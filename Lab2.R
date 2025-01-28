@@ -60,3 +60,7 @@ for (i in 1:length(all.album.subdirectories)){ #for each album sub directory
     code.to.process <- c(code.to.process, command.line)
   }
 }
+
+#Part 4
+#write the code.to.process vector to batfile.txt
+writeLines(code.to.process, con = 'batfile.txt', sep = '\n')
