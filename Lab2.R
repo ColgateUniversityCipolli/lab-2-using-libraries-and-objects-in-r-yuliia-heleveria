@@ -68,6 +68,8 @@ for (i in 1:length(all.album.subdirectories)){ #for each album sub directory
 writeLines(code.to.process, con = 'batfile.txt', sep = '\n')
 
 #Task 2
+
+#Step 1
 #find track in the folder
 find.song <- list.files()
 song.output <- find.song[8] #provided song
@@ -80,9 +82,7 @@ album.pt2 <- split.song.output[2]
 track.pt2.json <- split.song.output[3]
 track.pt2 <- str_sub(track.pt2.json, start = 1, end = -6) #remove .json
 
-#Step 1
-
 #Step 2
 # load JSON file into R
-fromJSON(song)
+fromJSON(song.output)
 
