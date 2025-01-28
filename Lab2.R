@@ -1,18 +1,37 @@
 #Part 1
-all.subdirectories <- list.dirs("MUSIC/")
-print(all.subdirectories)
+all.subdirectories <- list.dirs("MUSIC") #list all sub directories
+#print(all.subdirectories)
 
 #Part 2
-num.of.slashes <- str_count(all.subdirectories, pattern = '/')
-print(num.of.slashes)
+#count all forward slashes
+num.of.slashes <- str_count(all.subdirectories, pattern = '/') 
+#print(num.of.slashes)
+#subset album sub directories
+all.album.subdirectories <- subset(all.subdirectories, num.of.slashes == 2) 
+#print(all.album.subdirectories)
 
 #Part 3
-for (i in 1:length(all.subdirectories)){
+for (i in 1:length(all.album.subdirectories)){ #for each album sub directory
   #Part 3.1
-  all.files = list.files(all.subdirectories[i])
-  print(all.files)
+  #list files in current album
+  all.files <- list.files(all.album.subdirectories[i]) 
+  #print(all.files)
   
   #Part 3.2
+  #count number of .wav in each file
+  count.wav <- str_count(all.files, pattern = '.wav')
+  #print(count.wav)
+  #subset all .wav files from album's all files
+  wav.files <- subset(all.files, count.wav > 0)
+  #print(wav.files)
   
+  #Part 3.3
+  #creating an empty vector
+  code.to.process <- rep(x=NA, times= length(wav.files))
   
+  #loop through each track
+  for (j in 1:length(wav.files)){
+    #part 3.3.a
+    track.location = paste(all.album.subdirectories[i], wav.files[j])
+  }
 }
