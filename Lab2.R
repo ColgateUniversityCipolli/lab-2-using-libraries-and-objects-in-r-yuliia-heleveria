@@ -84,5 +84,26 @@ track.pt2 <- str_sub(track.pt2.json, start = 1, end = -6) #remove .json
 
 #Step 2
 # load JSON file into R
-fromJSON(song.output)
+song.list <- fromJSON(song.output)
 
+#Step 3
+#extract average_loudness
+song.avg.loudness <- song.list$lowlevel$average_loudness
+
+#extract the mean of spectral energy
+song.spectral.energy <- song.list$lowlevel$spectral_energy$mean
+
+#extract danceability
+song.danceability <- song.list$rhythm$danceability
+
+#extract bpm
+song.bpm <- song.list$rhythm$bpm
+
+#extract musical key
+song.musical.key <- song.list$tonal$key_key
+
+#extract musical mode
+song.musical.mode <- song.list$tonal$key_scale
+
+#extract duration in seconds
+song.duration <- song.list$metadata$audio_properties$length
