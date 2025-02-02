@@ -61,7 +61,7 @@ writeLines(code.to.process, con = 'batfile.txt', sep = '\n')
 #Step 1
 #find track in the folder
 find.song <- list.files()
-song.output <- find.song[8] #provided song
+song.output <- find.song[11] #provided song
 #extract artist
 split.song.output <- str_split(song.output, '-', simplify = T)
 artist.pt2 <- split.song.output[1]
