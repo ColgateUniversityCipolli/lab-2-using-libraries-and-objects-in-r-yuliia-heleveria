@@ -39,7 +39,7 @@
 
 \begin{multicols}{2}
 \begin{abstract}
-In this lab, we analyzed musical characteristics of JSON files and started considering automated processing of audio. We want to analyze bands' contributions to the song ``'Allen town', so we created a batch file containing 181 commands to avoid repetitive calling of an executable file. We traversed structured directory of music files to extract relevant data for creating commands. We also practiced traversing a JSON file to extract key features of a song in preparation to analyze bands' contributions to  ``'Allen town'.
+In this lab, we analyzed musical characteristics of JSON files and started considering automated processing of audio. We want to analyze bands' contributions to the song Allen town, so we practiced creating a batch file containing many commands to avoid repetitive calling of an executable file. We traversed structured directory of music files to extract relevant data for creating commands. We also practiced traversing a JSON file to extract key features of a song in preparation to analyze bands' contributions to  Allen town.
 \end{abstract}
 
 \noindent \textbf{Keywords:} Installing and using libraries; data extraction; looping structure; vectors and lists operations.
