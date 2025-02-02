@@ -74,7 +74,7 @@ As a result of this lab, we learned how to create a batch file for analysis of m
 
 
 \section{Discussion}
-It is easier to analyze a bulk of data if we have a batch file that runs command lines for every piece of data.
+It is easier to analyze a bulk of data if we have a batch file that runs command lines together for all data. A for loop and libraries are helpful for simplifying creation of the batch file and data collection. Additionally, the processing of JSON file of the song Au Revoir (Adios) showed that its average loudness is 0.55, its spectral energy is 0.21, dancebility is 0.97, bpm is 140, and its length is 108 seconds. All of this data could be used when analyzing contributions of The Front Bottoms to Allen Town.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
@@ -92,8 +92,6 @@ It is easier to analyze a bulk of data if we have a batch file that runs command
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \onecolumn
-\section{Appendix}
 
-If you have anything extra, you can add it here in the appendix. This can include images or tables that don't work well in the two-page setup, code snippets you might want to share, etc.
 
 \end{document}
